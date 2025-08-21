@@ -11,7 +11,7 @@ a single API.
 
 **NOTE:** *This library is currently beta. Features are being added!*
 - TODO: Support more major browsers
-
+- TODO: Add testing suite
 
 ## Features
 
