@@ -4,9 +4,14 @@
 ![npm version](https://img.shields.io/npm/v/@ncoderz/env-m8)
 ![License](https://img.shields.io/badge/license-BSD--2--Clause-blue)
 
-Where am I? Easy information about the environment in which your TypeScript or JavaScript is executing.
+Where am I?
 
-**NOTE:** *This library is currently alpha. Features and API are likely to change!*
+Easy information about the environment in which your TypeScript or JavaScript is executing through
+a single API.
+
+**NOTE:** *This library is currently beta. Features are being added!*
+- TODO: Support more major browsers
+
 
 ## Features
 
@@ -16,6 +21,7 @@ Where am I? Easy information about the environment in which your TypeScript or J
 - 🔍 **Which OS?** - the OS environment (name, version, etc)
 - 📦 **ESM & CommonJS compatible** - use with any module system
 - 💪 **Zero dependencies** - lightweight and fast (minified + gzipped ~2kB)
+
 
 ## Installation
 
