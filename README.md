@@ -35,38 +35,54 @@ npm install @ncoderz/env-m8
 import { EnvM8 } from '@ncoderz/env-m8';
 
 // Get an instance, will calculate environment only on first instance creation
+
 const env = new EnvM8();
 
+//
 // Find what you need to know about the environment
+//
+
+// Running in a browser
 const isBrowser = env.isBrowser;
 
+// Running in a backend
 const isBackend = env.isBackend;
 
-const isCI = env.isCI; // true if CI environemt variable is set and is not 'false' or '0' (case-insensitive)
+// Running in a CI environment
+// true if CI environment variable is set and is not 'false' or '0' (case-insensitive)
+const isCI = env.isCI;
 
-const platform = env.platform; // e.g., chrome, safari, node, bun, deno - see Platform type
+// Which platform?
+// e.g., chrome, safari, node, bun, deno - see Platform type
+const platform = env.platform;
 
-const os = env.os; // e.g., macos, windows, linux, android, ios - see Os type
+// Which OS?
+// e.g., macos, windows, linux, android, ios - see Os type
+const os = env.os;
 
+// Time library was loaded (usually at app start)
+// in milliseconds elapsed since midnight, January 1, 1970 Universal Coordinated Time (UTC)
 const bootTimestamp = env.bootTimestamp;
 
-const upTimestamp = env.upTimestamp;
+// Time since bootTimestamp in milliseconds
+const upTime = env.upTime;
 
-const { full, major, minor, patch, prerelease, build } = env.environmentVersion;
+// The version of the platform
+const { full, major, minor, patch, prerelease, build } = env.platformVersion;
 
+// The version of the OS
 const { full, major, minor, patch, prerelease, build } = env.osVersion;
 
-const NODE_ENV = env.NODE_ENV; // NODE_ENV at initialisation time, returns 'production' if not set
+// NODE_ENV at initialisation time, returns 'production' if not set
+const NODE_ENV = env.NODE_ENV;
 
 
 // On any instance of EnvM8, you can set your app name and version
-
 env.setApp('MyApp');
 env.setAppVersion('2.1.3-alpha+exp.sha.5114f85');
 
 
 // The values will then be available on any instance of EnvM8
-
 const appName = env.app; // MyApp
 const {
   full // '2.1.3-alpha+exp.sha.5114f85',
@@ -79,7 +95,6 @@ const {
 
 
 // Get a process.env environment variable safely, whatever the environment
-
 env.getEnv('LOG_LEVEL'); // string | undefined
 ```
 
@@ -150,8 +165,8 @@ env-m8 works in browsers:
   const isCI = env.isCI;
   const platform = env.platform; // e.g., chrome, safari, etc - see Platform type
   const bootTimestamp = env.bootTimestamp; // script load timestamp
-  const upTimestamp = env.upTimestamp; // time since script load
-  const { full, major, minor, patch, prerelease, build } = env.environmentVersion; // browser version
+  const upTime = env.upTime; // time since script load
+  const { full, major, minor, patch, prerelease, build } = env.platformVersion; // browser version
 
 </script>
 ```

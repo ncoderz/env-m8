@@ -261,7 +261,7 @@ class EnvM8 {
     _appVersion = this.appVersion;
   }
 
-  public get upTimestamp(): number {
+  public get upTime(): number {
     return Date.now() - this.bootTimestamp;
   }
 
