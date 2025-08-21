@@ -134,9 +134,8 @@ Not all information is available on all platforms.
 
 This is generally because the information is simply not available to the code in any way.
 
-**Browser:** In the browser, information is retrieved from the `userAgent` string. It is generally
-a bad idea to use this information to change code behaviour, and the values in the string are not
-always correct. In any case, the `userAgent` can be easily spoofed.
+**Browser:** In the browser, platform and version information is retrieved from the `userAgent` string.
+Not all information is always available, also note that the `userAgent` can be easily spoofed.
 
 Known missing information:
 - **\[all\] Browser versions:** depend on what is available in the provided `userAgent`. Sometimes minor, patch, build versions are missing.
