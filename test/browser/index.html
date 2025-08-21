@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Env M8 Test</title>
+    <script src="/env-m8.global.js"></script>
+  </head>
+  <body>
+    <script>
+      // Initialize the EnvM8 library and log some information
+      const { EnvM8 } = window.envM8;
+
+      const env = new EnvM8();
+
+      console.log('Platform:', env);
+
+      // Display env as JSON in a <pre> tag
+      const pre = document.createElement('pre');
+      pre.textContent = JSON.stringify(env, null, 2);
+      document.body.appendChild(pre);
+    </script>
+</html>
