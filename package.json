@@ -1,6 +1,6 @@
 {
   "name": "@ncoderz/env-m8",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Where am I? Information about the environment in which your TypeScript or JavaScript is executing.",
   "author": "RA Sewell <richard.sewell@ncoderz.com>",
   "license": "BSD-2-Clause",

@@ -30,7 +30,7 @@ function main() {
   env.setAppVersion('2.1.3-alpha+exp.sha.5114f85');
   log.info('appVersion updated:', env.appVersion.full, JSON.stringify(env.appVersion));
 
-  log.info('upTimestamp:', env.upTimestamp);
+  log.info('upTime:', env.upTime);
 }
 
 main();
