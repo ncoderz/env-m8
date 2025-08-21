@@ -8,9 +8,11 @@
   <body>
     <script>
       // Initialize the EnvM8 library and log some information
-      const { EnvM8 } = window.envM8;
+      const { EnvM8, PACKAGE_INFO } = window.envM8;
 
       const env = new EnvM8();
+      env.setApp(PACKAGE_INFO.name);
+      env.setAppVersion(PACKAGE_INFO.version);
 
       console.log('Platform:', env);
 
