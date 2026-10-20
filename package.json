@@ -1,8 +1,8 @@
 {
   "name": "@ncoderz/env-m8",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Where am I? Information about the environment in which your TypeScript or JavaScript is executing.",
-  "author": "RA Sewell <richard.sewell@ncoderz.com>",
+  "author": "ncoderz Limited <info@ncoderz.com>",
   "license": "BSD-2-Clause",
   "type": "module",
   "main": "./dist/index.cjs",

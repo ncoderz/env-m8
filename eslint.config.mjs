@@ -26,6 +26,10 @@ const config = [
       '.ai',
       '.github',
       'test/browser/env-m8.global.*',
+      // The public export and the commit lint are shared, byte for byte,
+      // with other projects, so they keep their own style.
+      'scripts/export-public/**',
+      'scripts/commit-lint.mjs',
     ],
   },
 

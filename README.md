@@ -1,6 +1,6 @@
 # env-m8
 
-![Build & Test](https://github.com/ncoderz/env-m8/actions/workflows/build-test.yml/badge.svg?branch=main)
+![Publish](https://github.com/ncoderz/env-m8/actions/workflows/publish.yml/badge.svg)
 ![npm version](https://img.shields.io/npm/v/@ncoderz/env-m8)
 ![License](https://img.shields.io/badge/license-BSD--2--Clause-blue)
 
